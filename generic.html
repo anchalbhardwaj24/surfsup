@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+		<title>Search - Pandemic Reviews</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body onload = "loadMap()">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo" style = "color: #0bb5db">RateWave</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="generic.html">Search</a>
+						<a href="elements.html">Post</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			
+	  <section id="main" >
+	          <div class="inner">
+	            <header class="major special">
+	              <h1 style = "color: #0bb5db">Search</h1>
+	              <p>Search for a location you want to visit, like Target or Safeway, and we'll show you a list of places with high ratings!</p>
+	            </header>
+				
+	            <h3 style = "color: #0bb5db"> Filters and Sorting Menus </h3>
+	            <div class="12u$">
+	  						<div class="select-wrapper">
+	  							<select name="demo-category" id="demo-category">
+	  								<option value="">- Beach Type-</option>
+	  								<option value="1">Surfer</option>
+	  								<option value="1">Recreational</option>
+	  								<option value="1">Cove/Rocks</option>
+	  						
+	  							</select>
+	    					</div>
+	  					</div>
+	            <br>
+	            <div class="12u$">
+	  						<div class="select-wrapper">
+	  							<select name="demo-category" id="demo-category">
+	  								<option value="">- Covid Safety -</option>
+	  								<option value="1">1-2</option>
+	  								<option value="1">2-3</option>
+	  								<option value="1">4-5</option>
+	  								<option value="1">All Ratings</option>
+	  							</select>
+	    					</div>
+	  					</div>
+	            <br>
+	            <div class="12u$">
+	  						<div class="select-wrapper">
+	  							<select name="demo-category" id="demo-category">
+	  								<option value="">- Sort By -</option>
+	  								<option value="1">Highest to Lowest</option>
+	  								<option value="1">Lowest to Highest</option>
+	  							</select>
+	    					</div>
+	  					</div>
+						
+	        
+				
+		   
+						    <form action="searchbusiness.php" method="post">
+						        <p>
+									<div class = "12u$ ">
+						            <label for="name" style = "color: #0bb5db">Name of beach:</label>
+						            <input type="text" name="search">
+								</div>
+						        </p>
+							
+							</form>
+					
+						<br>
+	            <div class="12u$">
+	  						<ul class="actions">
+	  							<a href = "browse.html" <li><input type="submit" value="Browse" class="special" style = "background-color: #0bb5db"/></li></a>
+	  						</ul>
+	  					</div>
+	            </section>
+	            <br>
+	           
+			
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
